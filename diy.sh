@@ -136,7 +136,8 @@ fi
 cd ..
 # 返回到package
 cd ..
-
+./scripts/feeds update -a
+./scripts/feeds install -a
 
 pwd
 
