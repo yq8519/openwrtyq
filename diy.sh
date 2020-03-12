@@ -24,6 +24,6 @@ cd koolproxyR
 git pull
 cd ..
 fi
-
+./scripts/feeds update -a && ./scripts/feeds install -a
 
 
