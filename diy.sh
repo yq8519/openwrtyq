@@ -22,8 +22,12 @@ git clone https://github.com/tzxiaozhen88/koolproxyR.git
 else
 cd koolproxyR
 git pull
+
 cd ..
 fi
-./scripts/feeds update -a && ./scripts/feeds install -a
+cd ..
+cd ..
+./scripts/feeds update -a
+./scripts/feeds install -a
 
 
