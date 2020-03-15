@@ -23,7 +23,7 @@ fi
 
 echo "luci-theme-argon"
 if [ ! -d "./luci-theme-argon" ];then
-git clone https://github.com/jerrykuku/luci-theme-argon.git
+git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
 fi
 
 echo "luci-theme-atmaterial"
