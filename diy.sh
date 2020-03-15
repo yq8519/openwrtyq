@@ -19,9 +19,19 @@ cd ./package/myapp
 echo "koolproxyR"
 if [ ! -d "./koolproxyR" ];then
 git clone https://github.com/tzxiaozhen88/koolproxyR.git
-cd ..
 fi
 
+echo "luci-theme-argon"
+if [ ! -d "./luci-theme-argon" ];then
+git clone https://github.com/jerrykuku/luci-theme-argon.git
+fi
+
+echo "luci-theme-atmaterial"
+if [ ! -d "./luci-theme-atmaterial" ];then
+git clone https://github.com/openwrt-develop/luci-theme-atmaterial.git
+fi
+
+cd ..
 cd ..
 ./scripts/feeds update -a
 ./scripts/feeds install -a
